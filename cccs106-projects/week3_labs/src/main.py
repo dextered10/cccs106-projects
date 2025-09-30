@@ -31,7 +31,7 @@ def main(page: ft.Page):
         helper_style=ft.TextStyle(color=ft.Colors.BLACK),
         width=300,
         autofocus=True,
-        icon="person",   # ✅ using string
+        icon="person",  
         bgcolor=ft.Colors.LIGHT_BLUE_ACCENT,
         color=ft.Colors.BLACK,
     )
@@ -47,7 +47,7 @@ def main(page: ft.Page):
         width=300,
         password=True,
         can_reveal_password=True,
-        icon="lock",   # ✅ using string
+        icon="lock",   
         bgcolor=ft.Colors.LIGHT_BLUE_ACCENT,
         color=ft.Colors.BLACK,
     )
@@ -77,7 +77,7 @@ def main(page: ft.Page):
                     color=ft.Colors.BLACK,
                 ),
                 actions=[ft.TextButton("OK", on_click=close_dialog)],
-                icon=ft.Icon(name="info", color=ft.Colors.BLUE),  # ✅ string icon
+                icon=ft.Icon(name="info", color=ft.Colors.BLUE),  
             )
             show_dialog(invalid_dialog)
             return
@@ -102,7 +102,7 @@ def main(page: ft.Page):
                         color=ft.Colors.BLACK,
                     ),
                     actions=[ft.TextButton("OK", on_click=close_dialog)],
-                    icon=ft.Icon(name="check_circle", color=ft.Colors.GREEN),  # ✅
+                    icon=ft.Icon(name="check_circle", color=ft.Colors.GREEN),  
                 )
                 show_dialog(success_dialog)
             else:
@@ -114,7 +114,7 @@ def main(page: ft.Page):
                         color=ft.Colors.BLACK,
                     ),
                     actions=[ft.TextButton("OK", on_click=close_dialog)],
-                    icon=ft.Icon(name="error", color=ft.Colors.RED),  # ✅
+                    icon=ft.Icon(name="error", color=ft.Colors.RED),  
                 )
                 show_dialog(failure_dialog)
 
@@ -127,7 +127,7 @@ def main(page: ft.Page):
                     color=ft.Colors.BLACK,
                 ),
                 actions=[ft.TextButton("OK", on_click=close_dialog)],
-                icon=ft.Icon(name="warning", color=ft.Colors.AMBER),  # ✅
+                icon=ft.Icon(name="warning", color=ft.Colors.AMBER),  
             )
             show_dialog(database_error_dialog)
 
@@ -136,7 +136,7 @@ def main(page: ft.Page):
         text="Login",
         on_click=login_click,
         width=100,
-        icon="arrow_forward",  # ✅ string icon
+        icon="arrow_forward",  
     )
 
     # Layout
